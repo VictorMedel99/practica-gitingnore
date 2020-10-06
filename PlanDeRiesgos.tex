@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array,tabularx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\begin{document}
+\include{caratulaTriesgos}
+
+\section{Introducción}
+\vspace{1 cm}
+\subsection{Propósito del documento}
+Los Riesgos dentro de un proyecto de software son eventos o condiciones inciertas que pueden ocurrir y tener un impacto positivo o negativo sobre los objetivos fijados dentro del proyecto.\\
+Es por eso que este documento se realiza con el fin de poder identificar los riesgos de manera clara y así poder atacarlos o prevenirlos con anticipación.\\
+\subsection{Visión general de los posibles riesgos}
+\textbf {Los riesgos principales tienen que ver con las siguientes categorías:} \\
+\begin{itemize}
+\item \textit{Problemas del equipo de trabajo.}
+\item \textit{Problemas de planificación del proyecto.}
+\item \textit{Problemas con el manejo de las tecnologías.}
+\item \textit{Problemas con la base de datos.}
+\end{itemize}
+
+\subsection{Responsabilidades}
+\textbf {Sera responsabilidad del líder de proyecto:} \\
+\begin{itemize}
+\item \textit{Gestionar el presente plan.}
+\item \textit{Controlar que las actividades se realicen de acuerdo al plan definido.}
+\item \textit{Tomar las medidas necesarias para asegurar que el proyecto se realice en el tiempo establecido.}
+\item \textit{Asegurarse que el proyecto cumpla con el objetivo principal.}
+\end{itemize}
+\vspace{1 cm}
+
+\textbf {Equipo de trabajo:} \vspace{5 mm} \\
+Todo el equipo de trabajo deberá tener en cuenta también lo descrito en el presente documento en pos de
+disminuir los riesgos del proyecto y así garantizar que se cumplan los objetivos y requerimientos establecidos.
+\newpage
+
+\subsection{Tabla de riesgos del proyecto}
+\vspace{1 cm}
+\textbf{Identificación del riesgo:}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|p{8cm}|c|}
+\hline
+\textbf{ID}&\textbf{Riesgo}&\textbf{Categoría}
+\\\hline
+R1&Dificultad en la comunicación vía remota entre los miembros del equipo&Equipo de trabajo.\\\hline
+R2&No contar con la cantidad de información requerida para el proyecto&Proyecto, Base de datos.\\\hline
+R3&El desarrollo y la administración del proyecto lleva mas tiempo de lo esperado.&Proyecto, Planificación.\\\hline
+R4&Dificultades durante el desarrollo de alguna etapa del proyecto.&Equipo de trabajo.\\\hline
+R5&Dificultades con el manejo del repositorio y control de versiones.&Equipo de trabajo, Manejo de tecnologías.\\\hline
+R6&Rupturas dentro del repositorio.&Equipo de trabajo, Manejo de las Tecnologías.\\\hline
+R7&El proyecto no cumple con los requerimientos establecidos&proyecto, planificación.\\\hline
+R8&El proyecto no pasa las pruebas establecidas&proyecto, planificación, equipo de trabajo.\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Probabilidad e Impacto}
+En el presente análisis se empleará una escala de medición subjetiva expresada
+en la siguiente tabla: 
+\begin{table}[h!]
+\begin{tabular}{|c|p{8cm}|}
+\hline
+\textbf{Rango de probabilidad}&\textbf{Impacto}
+\\\hline
+0.10-0.30&Bajo.\\\hline
+0.40-0.60&Medio.\\\hline
+0.70-100&Critico.\\\hline
+\end{tabular}
+\end{table}
+
+En la siguiente tabla se expresan los riesgos identificados para el proyecto con las
+probabilidades e impactos estimados subjetivamente para cada uno de ellos: 
+\vspace{1 cm}
+\begin{table}[h!]
+\begin{tabular}{|c|c|p{8cm}|}
+\hline
+\textbf{Riesgo}&\textbf{Probabilidad}&\textbf{Impacto}
+\\\hline
+R1&0.40&Medio.\\\hline
+R2&0.70&Critico.\\\hline
+R3&0.40&Medio.\\\hline
+R4&0.60&Medio.\\\hline
+R4&0.30&Bajo.\\\hline
+R5&0.40&Medio.\\\hline
+R6&0.30&Bajo.\\\hline
+R7&0.30&Bajo.\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Supervisión y gestión del riesgo}
+Ademas de haber identificado y listado los posibles riesgos es necesario que este documento sea revisado frecuentemente por todos los involucrados en el proyecto, ya que es posible identificar nuevos riesgos a lo largo del desarrollo de este proyecto y tendrá que ser actualizado para hacer una correcta gestión de los riesgos.
+\vspace{1 cm}
+
+\begin{table}[h!]
+\begin{tabular}{|p{0.10\linewidth}|p{0.30\linewidth}|p{0.30\linewidth}|p{0.30\linewidth}}
+\hline
+\textbf{ID Riesgo}&\textbf{Importancia del riesgo}&\textbf{Como minimizarlo}&\textbf{Quien lo supervisa}
+\\\hline
+R1&Por que esta dificultad por parte de los integrantes del equipo de trabajo pondría en riesgo el desarrollo en tiempo y forma del proyecto.&\begin{itemize}
+\item \textit{Establecer reuniones donde los integrantes puedan estar en constante comunicación .}
+\item \textit{Darle seguimiento a las tareas que cada uno desempeña.}
+\end{itemize}
+&Líder del proyecto.\\\hline
+
+R2&Por que se tendría que cambiar el tema del proyecto a desarrollar.&\begin{itemize}
+\item \textit{hallar la Base de datos Spotify que contenga al menos 1 millón de registros}
+\item \textit{Proponer alternativas eficientes en caso de no hallar la información exacta.}
+\end{itemize}&Equipo de trabajo.\\\hline
+
+R3&Por que en caso de retrasarse el proyecto se vería afectada la entrega final del proyecto y la evaluación parcial de los integrantes del proyecto.&\begin{itemize}
+\item \textit{Revisar que las actividades de cada integrante del equipo de trabajo se estén realizando de acuerdo a lo establecido.}
+\item \textit{Utilizar kanban automatizados con reviewers que estén monitoreando que se lleven acabo las actividades.}
+\end{itemize} 
+&Líder del proyecto\\\hline
+
+
+
+\end{tabular}
+\end{table}
+
+
+\end{document}
